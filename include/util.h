@@ -2,7 +2,7 @@
 #define UTIL_H
 
 #define BUFF_SIZE  256
-#define MAX_TOKENS   4
+#define MAX_TOKENS   3
 
 typedef enum {
     RED,

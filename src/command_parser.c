@@ -39,7 +39,8 @@ command_t *command_init() {
 int parse_command(command_t *command,char *input) {
     while(*input != '\0') {
         if((*command).argc >= MAX_TOKENS) {
-            print("Error: The maximum amount of arguments per command is 4\n",RED); 
+            print("Error: The maximum amount of arguments per command is 3\n",RED); 
+            print("Hint: Type help for more command details\n",YELLOW);
             return -1; 
         }
 
