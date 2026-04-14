@@ -49,6 +49,13 @@ make install
 make remove
 ```
 
+---
+
+## SCREENSHOT
+![alt text](https://github.com/skinwalker3654/file-manager/blob/main/.github/screenshot.png?raw=true)
+
+---
+
 ## extending the functionality of the program is simple
 
 you should think with this way.
