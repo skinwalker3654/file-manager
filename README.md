@@ -62,4 +62,6 @@ and the source code goes to **src/operations.c**
 
 when you add your new operation then you go to then of the execte_command function on **src/executer.c**
 and do call the operation when the command is called. See how the other operations are handled and do the same with your new one
+
+and at the end you should write a simple description and the syntax of the command on the print_help function from **src/util.c**
 # file-manager
