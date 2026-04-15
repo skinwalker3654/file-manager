@@ -140,6 +140,13 @@ int execute_command(command_t *command) {
         command->argc = 0;
         return 0;
     } else if(strcmp(command->argv[0],"exit")==0) {
+        if(command->argc != 1) {
+            print("Error: The command exit does not require any arguments\n",RED);
+            print("Correct ussage: exit\n",YELLOW);
+            command->argc = 0;
+            return -1;
+        }
+
         free_command(command);
         print("Exiting...\n",YELLOW);
         exit(EXIT_SUCCESS);
