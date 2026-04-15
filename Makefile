@@ -2,9 +2,9 @@ src = src/main.c src/command_parser.c src/executer.c src/util.c src/operations.c
 cc = gcc
 target = file_manager
 
-$(target): $(src)
+program: $(src)
 	@echo "Compiling the file manager..."
-	$(cc) $(src) -o $@
+	$(cc) $^ -o $(target)
 
 clean: $(target)
 	@echo "Removing the file manager..."
@@ -14,8 +14,8 @@ install: $(target)
 	@echo "Moving executable into bin folders..."
 	sudo cp $< /usr/bin/
 
-remvoe: $(target)
+remove: $(target)
 	@echo "Removing the file manager from your system..."
 	sudo rm /usr/bin/$(target)
 
-.PHONY: clean install
+.PHONY: clean install remove program
