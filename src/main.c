@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include "../include/util.h"
 #include "../include/executer.h"
-#include "../include/command_parser.h"
-#include "../include/operations.h"
 
 int main(void) {
     char input[BUFF_SIZE];
