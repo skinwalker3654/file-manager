@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+firjifjrifj
 
 /* this function allocates memory for tha string list and puts the argc to 0 
  * if the function fails it returns NULL otherwise it returns the @command */
